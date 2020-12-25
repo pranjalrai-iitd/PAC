@@ -305,18 +305,24 @@ main {
         visibility: visible;
         cursor: pointer;
     }
+    .nav-links {
+        justify-content: center;
+    }
     .nav-links ul {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.89);
+        border-radius: 50px;
         position: absolute;
-        right: 0;
         top: 15vh;
-        height: 85vh;
-        width: 100%;
+        left: 0vw;
+        height: 65vh;
+        width: 150%;
+        transform: translateX(-22.5%);
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transition: 0.3s ease;
         visibility: hidden;
+        text-align: center;
     }
 }
 
