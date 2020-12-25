@@ -1,143 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="style.sass">
-<script src="app.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Cookie&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="Figures/PAC.png" type="image" sizes="48x48">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAC IITD | Home</title>
-    <header>
-        <div class='logo'>
-            <img src="Figures/PAC.png" alt="PAC logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" id="current">HOME</a></li>
-                <li><a href="#" id="events">EVENTS</a></li>
-                <li><a href="#" id="team">TEAM</a></li>
-                <li><a href="#" id="projects">PROJECTS</a></li>
-                <li><a href="#" id="contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Figures/PAC.png" type="image" sizes="48x48">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>PAC IITD | HOME</title>
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="bsM0tB3t"></script>
-    <div class='welcome'>
-        <h1>The Physics & Astronomy Club, IIT Delhi</h1>
-        <h2>from quarks to quasars !</h2>
-        <h3>Through this club, we aim to create an engaging environment where scientific thought and logical reasoning is encouraged to tackle both previously solved and unsolved questions regarding the universe and the laws of physics. <br> <br> We focusses
-            to gather enthusiasts and facilitate knowledge sharing across all groups of students and to capture the interest of all the students in the mysteries of the universe. We also promotes learning from the experts of the Research field and the
-            people in the industry
-        </h3>
-        <h4><a href="https://caic.iitd.ac.in/pac">More about us!</a></h4>
-
-    </div>
-    <div class='guard'>
-        <h1>
-            <black>Our History</black>
-        </h1>
-        <h6>The Physics and Astronomy Club IIT Delhi,<br> is the successor to the Astronomy Club of Indian Institute of Technology, Delhi, which had been established in 2011, and had been operational under Technocracy, CAIC, IIT Delhi</h6>
-        <div class='logos'>
-            <div class="astronomy">
-                <img src="Figures/astronomy_club.png" alt="Astronomy club logo">
-                <br>
-                <caption>The Astronomy Club, IIT Delhi (2011)</caption>
-            </div>
-            <div class="PAC">
-                <img src="Figures/PAC.png" alt="PAC logo">
-                <br>
-                <caption>Physics & Astronomy Club, IIT Delhi</caption>
-            </div>
+    <header>
+        <script src='app.js'></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="bsM0tB3t"></script>
+        <div class="logo">
+            <img src="Figures/PAC.png" alt="PAC logo">
         </div>
-    </div>
-    <div class='about'>
-        <h1>What do we do?</h1>
-        <h3> <b>Sky observations:</b><br>Both in-campus and short excursions for observation of the night sky, guided by either members from the club or professional guides to learn to observe, identify and deduce the properties of objects visible in the night
-            sky through a telescope.<br><br><b>Guest Lectures and Workshops:</b><br>Lectures and workshops on several topics in Physics, Astronomy and Mathematics by faculty from colleges and research institutes from across India and abroad.<br><br><b>Discussions:</b><br>Open
-            discussions on recent and/or important topics in Physics, Mathematics and Astronomy between members of the club and guests, may or may not be aided by a professor<br><br><b>Competitive Events:</b><br>Prepare for and participate in inter-college
-            and interinstitution events in the fields of Physics, Astronomy, Mathematics, Design and Robotics.<br><br><b>Miscellaneous:</b><br>Includes competitive quizzes, treasure hunts, research projects, comic design and more.</h3>
-        <h4><a href="https://caic.iitd.ac.in/Wordpress/wp-content/uploads/The-Constitution-Physics-and-Astronomy-Club.pdf">Our Constitution!</a></h4>
-    </div>
-    <div class='guard'>
-
-        <h1>
-            <black>Gallery</black>
-        </h1>
-
-        <div class='images'>
-
-            <div class="gallery">
-                <img src="Figures/Gallery/1.jpg" alt="Cinque Terre" width="600" height="400">
-                <div class="desc">Talk by Ann Devereaux on the 30th of September at 2 PM. Ann works with NASA's Jet propulsion laboratory and was closely involved with the curiosity rover which launched in 2011 and works on its cousin project, which is on stand by for
-                    launch in 2020. </div>
-            </div>
-
-            <div class="gallery">
-                <img src="Figures/Gallery/2.jpg" alt="Forest" width="600" height="400">
-                <div class="desc">Moon gazing session at the SAC lawns where students got to use our Dobsonian telescope and observed the South Pole-Aitken, one of the largest craters on the moon!</div>
-            </div>
-
-            <div class="gallery">
-                <img src="Figures/Gallery/3.jpg" alt="Northern Lights" width="600" height="400">
-                <div class="desc">Moon through our Dobsonian telescope</div>
-            </div>
-
-            <div class="gallery">
-                <img src="Figures/Gallery/4.jpg" alt="Mountains" width="600" height="400">
-                <div class="desc">Livestream of ISRO's launch of Chandrayaan-2. It was the first-ever mission to soft-land this near to the lunar south pole. </div>
-            </div>
+        <div class="nav-links">
+            <ul>
+                <li><a class='nav-link' id='active'>Home</a></li>
+                <li><a class='nav-link'>Team</a></li>
+                <li><a class='nav-link'>Projects</a></li>
+                <li><a class='nav-link'>Contact</a></li>
+            </ul>
         </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
 
-    </div>
+    <main>
+        <section class="welcome">
+            <h1>The Physics & Astronomy Club, IIT Delhi</h1>
+            <h2>from quarks to quasars !</h2>
+            <p>Through this club, we aim to create an engaging environment where scientific thought and logical reasoning is encouraged to tackle both previously solved and unsolved questions regarding the universe and the laws of physics. <br> <br> We focusses
+                to gather enthusiasts and facilitate knowledge sharing across all groups of students and to capture the interest of all the students in the mysteries of the universe. We also promotes learning from the experts of the Research field and
+                the people in the industry
+            </p>
+            <button><a href="https://caic.iitd.ac.in/pac">More about us!</a></button>
+        </section>
+        <section class="about">
+            <h1>Our History</h1>
+            <p>The Physics and Astronomy Club IIT Delhi, is the successor to the Astronomy Club of Indian Institute of Technology, Delhi, which had been established in 2011, and had been operational under Technocracy, CAIC, IIT Delhi</p>
+            <div class='logos'>
+                <div class="astronomy">
+                    <img src="Figures/astronomy_club.png" alt="Astronomy club logo">
+                    <h6>The Astronomy Club, IIT Delhi (2011)</h6>
+                </div>
+                <div class="PAC">
+                    <img src="Figures/PAC.png" alt="PAC logo">
+                    <h6>Physics & Astronomy Club, IIT Delhi</h6>
+                </div>
+            </div>
+        </section>
+        <section class="what">
+            <h1>What do we do?</h1>
+            <p><b>Sky observations:</b><br>Both in-campus and short excursions for observation of the night sky, guided by either members from the club or professional guides to learn to observe, identify and deduce the properties of objects visible in the
+                night sky through a telescope.<br><br><b>Guest Lectures and Workshops:</b><br>Lectures and workshops on several topics in Physics, Astronomy and Mathematics by faculty from colleges and research institutes from across India and abroad.<br><br><b>Discussions:</b><br>Open
+                discussions on recent and/or important topics in Physics, Mathematics and Astronomy between members of the club and guests, may or may not be aided by a professor<br><br><b>Competitive Events:</b><br>Prepare for and participate in inter-college
+                and interinstitution events in the fields of Physics, Astronomy, Mathematics, Design and Robotics.<br><br><b>Miscellaneous:</b><br>Includes competitive quizzes, treasure hunts, research projects, comic design and more.
+            </p>
+            <button><a href="https://caic.iitd.ac.in/Wordpress/wp-content/uploads/The-Constitution-Physics-and-Astronomy-Club.pdf">Our Constitution!</a></button>
+        </section>
+        <section class="images">
+            <h1>Gallery</h1>
+            <div class='gallery'>
+                <img src="Figures/Gallery/1.jpg" alt="Astronomy club logo">
+                <img src="Figures/Gallery/2.jpg" alt="Astronomy club logo">
+                <img src="Figures/Gallery/3.jpg" alt="Astronomy club logo">
+                <img src="Figures/Gallery/4.jpg" alt="Astronomy club logo">
+            </div>
+            <div class='gallery'>
+                <img src="Figures/Gallery/5.jpg" alt="Astronomy club logo">
+                <img src="Figures/Gallery/6.jpg" alt="Astronomy club logo">
+                <img src="Figures/Gallery/7.jpg" alt="Astronomy club logo">
+                <img src="Figures/Gallery/8.jpg" alt="Astronomy club logo">
+            </div>
+        </section>
+        <section class="iframes">
+            <h1>Latest updates!</h1>
+            <div class="social">
+                <div class="fb">
+                    <div class="fb-page" data-href="https://www.facebook.com/PhysicsAndAstronomyIITD" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/PhysicsAndAstronomyIITD" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PhysicsAndAstronomyIITD">Physics &amp; Astronomy Club, IIT Delhi</a></blockquote>
+                    </div>
+                </div>
+                <div class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-HvHEAsbfJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href='mailto:physicsastronomyclubiitd@gmail.com '><i class="fa fa-envelope"></i></a></li>
+                <li><a href='https://www.instagram.com/pac_iitd/'><i class="fa fa-instagram"></i></a></li>
+                <li><a href='https://www.facebook.com/PhysicsAndAstronomyIITD/ '><i class="fa fa-facebook" ></i></a><br></li>
+                <li><a href='https://www.youtube.com/channel/UCetVYW24b8e4ukDjNaU0n2A '><i class="fa fa-youtube" ></i></a><br></li>
+            </ul>
+        </div>
+        <h5>Copyright &copy 2020 Physics & Astronomy Club, IIT Delhi</h5>
+
+    </footer>
 </body>
-
-<footer>
-    <h1>Latest updates!</h1>
-    <div class="iframes">
-        <div class="fb">
-            <div class="fb-page" data-href="https://www.facebook.com/PhysicsAndAstronomyIITD" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/PhysicsAndAstronomyIITD" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PhysicsAndAstronomyIITD">Physics &amp; Astronomy Club, IIT Delhi</a></blockquote>
-            </div>
-
-        </div>
-        <div class="youtube">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-HvHEAsbfJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class='footer-links'>
-        <ul>
-            <li><a href='mailto:physicsastronomyclubiitd@gmail.com '><i class="fa fa-envelope"></i></a></li>
-            <li><a href='https://www.instagram.com/pac_iitd/'><i class="fa fa-instagram"></i></a></li>
-            <li><a href='https://www.facebook.com/PhysicsAndAstronomyIITD/ '><i class="fa fa-facebook" ></i></a><br></li>
-            <li><a href='https://www.youtube.com/channel/UCetVYW24b8e4ukDjNaU0n2A '><i class="fa fa-youtube" ></i></a><br></li>
-
-        </ul>
-    </div>
-
-    <div class="copyright">
-        Copyright &copy 2020 Physics & Astronomy Club, IIT Delhi
-    </div>
-
-
-</footer>
-
-
-
 
 </html>
