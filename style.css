@@ -1,289 +1,799 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
 html {
-    font-family: "Oswald";
-    background-color: #080808;
+    background-color: black;
 }
 
 header {
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.89);
+    width: 100%;
+    margin: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    align-items: center;
     height: 15vh;
+    z-index: 10;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 80px;
+    border-radius: 20px;
+}
+
+.nav-links {
+    flex: 4;
+}
+
+.nav-links ul {
     display: flex;
-    justify-content: space-evenly;
-}
-
-header .logo {
-    background-color: rgba(14, 2, 2, 0.801);
-    padding-left: 4vw;
-    padding-top: 1vh;
-    padding-right: 2vw;
-    padding-bottom: 1vh;
-    width: 50%;
-}
-
-header .logo img {
-    float: left;
-    height: 13vh;
-    border-radius: 2vh;
-}
-
-header nav {
-    background-color: rgba(14, 2, 2, 0.801);
-    width: 50%;
-}
-
-header nav ul {
-    padding-top: 2vh;
-    padding-left: 2vw;
-    padding-right: 4vw;
-    padding-bottom: 2vh;
+    justify-content: space-between;
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header nav ul li a {
     text-decoration: none;
-    font-size: 2.5vh;
-    color: whitesmoke;
+    color: white;
+    visibility: visible;
 }
 
-header nav ul li a:hover {
+.nav-links ul li a {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-links ul li a:hover {
     text-decoration: underline;
 }
 
-body .welcome {
+.burger {
+    flex: 0.1;
+    visibility: hidden;
+}
+
+.burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    margin: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    align-items: center;
+    height: 20vh;
+    flex-direction: column;
+}
+
+.footer-links {
+    width: 100%;
+    margin: auto;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(32, 31, 31);
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+.footer-links ul li a:hover {
+    color: grey;
+}
+
+footer h5 {
+    padding-bottom: 10px;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+main {
     margin-top: 15vh;
-    padding-top: 6vh;
-    height: 95vh;
+    background-color: whitesmoke;
+}
+
+.welcome {
+    height: 85vh;
     background-image: url("Figures/lagoon_nebula.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-body h1 {
-    color: whitesmoke;
+.welcome h1,
+.what h1,
+.iframes h1 {
+    padding-top: 2vh;
     text-align: center;
-    font-size: 5vh;
-    text-shadow: 2px 2px 2px black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 38px;
 }
 
-body h2 {
-    color: rgb(252, 188, 71);
+.welcome h2,
+.what h2 {
+    padding-top: 2vh;
     text-align: center;
+    color: rgb(245, 201, 120);
+    text-shadow: 1px 1px 1px black;
+    font-size: 38px;
     font-family: 'Caveat', cursive;
-    font-size: 5vh;
-    text-shadow: 2px 2px 2px black;
+    padding-bottom: 2vh;
 }
 
-body h3 {
-    background-color: #08080891;
-    border-radius: 6vh;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
-    padding-left: 2%;
+.welcome p,
+.what p {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     padding-right: 2%;
-    color: whitesmoke;
+    padding-left: 2%;
+    width: 50%;
+    margin: auto;
     text-align: center;
-    width: 48%;
-    transform: translateX(46%);
-    font-family: 'calibri';
-    font-weight: 400;
-    font-size: 2.5vh;
-    text-shadow: 0px 0px 0px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 200;
 }
 
-body h3 b {
-    color: rgb(252, 188, 71);
+.what p b {
+    color: rgb(245, 201, 120);
 }
 
-body h6 {
-    color: black;
-    text-align: center;
-    font-weight: 400;
-    font-size: 2.5vh;
-}
-
-body h4 {
-    margin-top: 4vh;
+.welcome button {
+    width: 10%;
+    margin: auto;
     background-color: brown;
-    border-radius: 5vh;
-    width: 10vw;
-    padding: 2vw;
-    transform: translateX(43vw);
-    color: black;
-    text-align: center;
-    font-family: 'calibri';
-    font-weight: 400;
-    font-size: 2.5vh;
-    text-shadow: 0px 0px 0px black;
+    border: none;
+    border-radius: 20px;
+    padding: 1vh;
 }
 
-body h4 a {
+.what button {
+    width: 20%;
+    margin-top: 10vh;
+    transform: translateX(200%);
+    background-color: brown;
+    border: none;
+    border-radius: 20px;
+    padding: 1vh;
+}
+
+.welcome button a,
+.what button a {
     text-decoration: none;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
 
-body h4:hover {
-    background-color: rgb(252, 188, 71);
+.welcome button:hover,
+.what button:hover {
+    background-color: rgb(245, 190, 88);
 }
 
-body .about {
-    padding-top: 6vh;
-    height: 105vh;
+.about {
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.about h1,
+.images h1 {
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 38px;
+}
+
+.about p {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.logos {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos img {
+    border: 4px solid black;
+}
+
+.what {
+    height: 120vh;
     background-image: url("Figures/veil_nebula.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-body h4 {
-    color: whitesmoke;
-    text-align: center;
-    font-family: 'calibri';
-    font-weight: 500;
-    font-size: 2.5vh;
-    text-shadow: 0px 0px 0px black;
-}
-
-body .guard {
-    padding-top: 6vh;
-    height: 80vh;
-    background-color: whitesmoke;
-}
-
-h1 black {
-    color: black;
-    text-shadow: none;
-}
-
-.logos {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.logos img {
-    border: 2px solid black;
-}
-
-.astronomy caption,
-.PAC caption {
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-style: italic;
-    padding: 2px;
-    text-align: center;
-}
-
 .images {
+    height: 85vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+.images .gallery {
     display: flex;
     justify-content: space-evenly;
 }
 
-div.gallery {
-    margin: 4vh;
-    border: 1px solid #ccc;
-    float: left;
-    width: 40vh;
+.images .gallery img {
+    width: 15%;
+    margin-right: 2px;
+    margin-left: 2px;
+    border: 4px solid rgb(245, 201, 120);
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+.images .gallery img:hover {
+    filter: brightness(50%);
 }
 
-div.gallery img {
-    width: 40vh;
-    height: auto;
-}
-
-div.desc {
-    padding: 2vh;
-    text-align: center;
-}
-
-footer {
-    padding-top: 2vh;
+.iframes {
     height: 80vh;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-footer .iframes {
-    height: 60vh;
-    padding: 0;
-    width: 100%;
-    background-color: black;
+.iframes .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iframes .social .fb {
+    flex: 1;
     display: flex;
     justify-content: space-evenly;
 }
 
-footer .iframes .fb {
-    overflow-y: hidden;
-    background-color: black;
-    width: 50vw;
+.iframes .social .youtube {
+    flex: 1;
     display: flex;
     justify-content: space-evenly;
+    padding-right: 6vh;
 }
 
-footer .iframes .fb .fb-page {
-    float: left;
-    height: 59vh;
-    border: 0.5vh solid whitesmoke;
-    overflow-y: hidden;
+.iframes .social .fb .fb-page,
+.iframes .social .youtube iframe {
+    border: 4px solid white;
 }
 
-footer .iframes .youtube {
-    overflow-y: hidden;
-    background-color: black;
-    width: 50vw;
-    display: flex;
-    justify-content: space-evenly;
+@media only screen and (max-width:700px) {
+    .burger {
+        visibility: visible;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.89);
+        position: absolute;
+        right: 0;
+        top: 15vh;
+        height: 85vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.3s ease;
+        visibility: hidden;
+    }
 }
 
-footer .iframes .youtube iframe {
-    margin-top: 8.75vh;
-    margin-bottom: 5.35vh;
-    height: 37.5vh;
-    size: cover;
-    float: left;
-    border: 0.5vh solid whitesmoke;
+@media only screen and (max-width:1300px) {
+    .welcome p,
+    .what p,
+    .about p,
+    .welcome button a,
+    .what button a {
+        font-size: 15px;
+    }
 }
 
-footer .footer-links {
-    height: 20vh;
-    padding: 0;
-    width: 100%;
-    background-color: rgb(32, 31, 31);
-    color: whitesmoke;
+@media only screen and (max-width:1100px) {
+    .images .gallery img {
+        width: 20%;
+    }
 }
 
-footer .footer-links ul {
-    padding-top: 5vh;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 5vh;
-    font-size: 6vh;
+@media only screen and (max-width:1000px) {
+    .iframes {
+        height: 140vh;
+        justify-content: space-evenly;
+    }
+    .iframes .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .iframes .social .fb,
+    .iframes .social .youtube {
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+    }
+    .iframes .social .youtube {
+        padding-left: 6vh;
+    }
 }
 
-footer .footer-links ul li a {
-    color: whitesmoke;
+@media only screen and (max-width:900px) {
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 14px;
+    }
+    .about {
+        height: 70vh;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 13px;
+    }
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 34px;
+    }
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+    footer h5 {
+        font-size: 12px;
+    }
+    .logos {
+        justify-content: space-evenly;
+    }
+    .astronomy,
+    .PAC {
+        padding-right: 2vh;
+        padding-left: 2vh;
+    }
+    .astronomy img,
+    .PAC img {
+        width: 80%;
+    }
+    .what {
+        height: 110vh;
+    }
+    .astronomy h6,
+    .PAC h6 {
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+        padding-right: 4vh;
+        padding-left: 1vh;
+    }
 }
 
-footer .footer-links ul li a:hover {
-    color: grey;
+@media only screen and (max-width:800px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 30px;
+    }
+    .images {
+        height: 70vh;
+    }
+    .what {
+        height: 120vh;
+    }
 }
 
-footer .copyright {
-    height: 8vh;
-    padding-top: 4vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    color: whitesmoke;
-    font-size: 2vh;
-    font-weight: lighter;
+@media only screen and (max-width:750px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 28px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 13px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 26px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 12.5px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 10.5px;
+    }
+    .logo img {
+        width: 60px;
+        border-radius: 20px;
+    }
+    .burger .line {
+        width: 25px;
+        height: 4px;
+        background-color: white;
+        margin: 4px 0 0 0;
+        border-radius: 4px;
+    }
+    .iframes {
+        justify-content: space-evenly;
+    }
+    .iframes .social .youtube {
+        width: 80%;
+    }
+    .iframes .social .youtube iframe {
+        width: 100%;
+        height: 120%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 24px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 12.5px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 10px;
+    }
+    .logo img {
+        width: 60px;
+        border-radius: 20px;
+    }
+    .burger .line {
+        width: 25px;
+        height: 4px;
+        background-color: white;
+        margin: 4px 0 0 0;
+        border-radius: 4px;
+    }
+    .iframes {
+        justify-content: space-evenly;
+    }
+    .iframes .social .youtube {
+        width: 80%;
+    }
+    .iframes .social .youtube iframe {
+        width: 100%;
+        height: 120%;
+    }
+    .images .gallery img {
+        width: 20%;
+    }
+    .images {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .welcome button {
+        width: 20%;
+        margin: auto;
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .what {
+        height: 125vh;
+    }
+    footer h5 {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 22px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 9.5px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 8px;
+    }
+    .logo img {
+        width: 55px;
+        border-radius: 20px;
+    }
+    .burger .line {
+        width: 22px;
+        height: 4px;
+        background-color: white;
+        margin: 4px 0 0 0;
+        border-radius: 4px;
+    }
+    .what {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 20px;
+    }
+    .images .gallery img {
+        width: 22%;
+        margin: 1px;
+        border: 4px solid rgb(245, 201, 120);
+    }
+    .images {
+        height: 50vh;
+    }
+    .iframes .social .fb {
+        width: 50%;
+    }
+    .iframes .social .fb .fb-page blockquote {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 18px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 9px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 8px;
+    }
+    .iframes {
+        justify-content: space-evenly;
+    }
+    .iframes .social .youtube {
+        width: 100%;
+    }
+    .iframes .social .youtube iframe {
+        width: 100%;
+        height: 120%;
+    }
+    .welcome button {
+        width: 30%;
+        margin: auto;
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .what button {
+        width: 30%;
+        margin-top: 10vh;
+        transform: translateX(120%);
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .welcome p,
+    .what p {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 18px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 9px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 8px;
+    }
+    .iframes {
+        justify-content: space-evenly;
+    }
+    .iframes .social .youtube {
+        width: 90%;
+    }
+    .iframes .social .youtube iframe {
+        width: 100%;
+        height: 90%;
+    }
+    .welcome button {
+        width: 30%;
+        margin: auto;
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .what button {
+        width: 30%;
+        margin-top: 10vh;
+        transform: translateX(120%);
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .welcome p,
+    .what p {
+        width: 70%;
+    }
+    .iframes .social .fb {
+        width: 40%;
+    }
+    .iframes .social .fb .fb-page blockquote {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .welcome h1,
+    .about h1,
+    .what h1,
+    .images h1,
+    .iframes h1,
+    .welcome h2 {
+        font-size: 18px;
+    }
+    .welcome p,
+    .what p,
+    .about p {
+        font-size: 9px;
+    }
+    .welcome button a,
+    .what button a {
+        font-size: 8px;
+    }
+    .iframes {
+        justify-content: space-evenly;
+    }
+    .iframes .social .youtube {
+        width: 90%;
+    }
+    .iframes .social .youtube iframe {
+        width: 100%;
+        height: 90%;
+    }
+    .welcome button {
+        width: 30%;
+        margin: auto;
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .what button {
+        width: 30%;
+        margin-top: 10vh;
+        transform: translateX(120%);
+        background-color: brown;
+        border: none;
+        border-radius: 20px;
+        padding: 1vh;
+    }
+    .welcome p,
+    .what p {
+        width: 70%;
+    }
+    .iframes .social .fb {
+        width: 40%;
+    }
+    .iframes .social .fb .fb-page blockquote {
+        width: 100%;
+    }
+    .logos {
+        justify-content: space-evenly;
+    }
+    .astronomy,
+    .PAC {
+        padding-right: 2vh;
+        padding-left: 2vh;
+    }
+    .astronomy img,
+    .PAC img {
+        width: 70%;
+    }
+    .astronomy h6,
+    .PAC h6 {
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+        padding-right: 4vh;
+        padding-left: 1vh;
+    }
+    .about {
+        height: 60vh;
+    }
 }
