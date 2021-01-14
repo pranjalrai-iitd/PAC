@@ -1,15 +1,13 @@
 window.onload = function() {
-    const brg = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links ul');
+    const navslide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
 
-    brg.addEventListener('click', () => {
-        if (nav.style.visibility == "hidden") {
-            console.log(1);
-            nav.style.visibility = "visible";
-        } else {
-            nav.style.visibility = "hidden";
-            console.log(2);
-        }
-    });
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-links-active');
+        });
+    }
+
+    navslide();
 
 }
