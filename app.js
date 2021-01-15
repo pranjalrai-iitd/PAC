@@ -9,7 +9,7 @@ window.onload = function() {
         console.log(distance);
         burger.addEventListener('click', () => {
             nav.classList.toggle('nav-links-active');
-            if (distance > -20) {
+            if (distance > -40) {
                 head.classList.toggle('header-active');
             }
             console.log("Hi");
@@ -24,10 +24,10 @@ window.onscroll = function() {
         var scrollTop = $(window).scrollTop();
         elementOffset = $(".welcome").offset().top;
         distance = (elementOffset - scrollTop);
-        if (distance < -20) {
+        if (distance < -40) {
             head.classList.add('header-active');
         }
-        if (distance > -20) {
+        if (distance > -40) {
             head.classList.remove('header-active');
         }
 
