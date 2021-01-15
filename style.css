@@ -162,6 +162,7 @@ footer {
     font-size: 14px;
     border-bottom: 2px solid black;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-nav ul li a:hover {
