@@ -334,7 +334,7 @@ main {
 .what {
     padding: 5px;
     min-height: 120vh;
-    background-image: url("Figures/bubble_nebula.jpg");
+    background-image: url("Figures/bubble.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -523,7 +523,8 @@ main {
     }
     .about c,
     .welcome c,
-    .updates c {
+    .updates c,
+    .what c {
         font-size: 10px;
     }
     .updates .iframes {
@@ -573,7 +574,8 @@ main {
     }
     .about c,
     .welcome c,
-    .updates c {
+    .updates c,
+    .what c {
         font-size: 8px;
     }
     .updates .iframes {
@@ -634,7 +636,8 @@ main {
     }
     .about c,
     .welcome c,
-    .updates c {
+    .updates c,
+    .what c {
         font-size: 8px;
     }
 }
