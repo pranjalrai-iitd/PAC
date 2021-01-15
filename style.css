@@ -176,7 +176,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(43, 106, 116);
+    background-color: white;
 }
 
 .footer-links ul {
@@ -188,13 +188,28 @@ footer {
 }
 
 .footer-links ul li a {
-    color: white;
+    color: black;
     font-size: 5vh;
     padding: 4px;
 }
 
-.footer-links ul li a:hover {
+.footer-links ul li #mail:hover {
     color: rgb(253, 221, 83);
+    transition: 0.3s;
+}
+
+.footer-links ul li #insta:hover {
+    color: #f04c5a;
+    transition: 0.3s;
+}
+
+.footer-links ul li #fb:hover {
+    color: rgb(66, 103, 178);
+    transition: 0.3s;
+}
+
+.footer-links ul li #youtube:hover {
+    color: red;
     transition: 0.3s;
 }
 
@@ -204,7 +219,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(43, 106, 116);
+    background-image: url("Figures/stars.jpg");
+    background-size: contain;
 }
 
 .copyright p {
@@ -224,7 +240,7 @@ main {
     min-height: 100vh;
     background-image: url("Figures/mars.jpg");
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
@@ -298,7 +314,8 @@ main {
     justify-content: space-around;
     flex-direction: column;
     text-align: center;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .about .astronomy {
@@ -337,7 +354,7 @@ main {
     min-height: 120vh;
     background-image: url("Figures/bubble.jpg");
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
@@ -354,7 +371,8 @@ main {
     justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: black;
+    background-color: white;
 }
 
 .events h1 {
@@ -376,7 +394,7 @@ main {
 
 .updates {
     min-height: 105vh;
-    background-image: url("Figures/veil_nebula.jpg");
+    background-image: url("Figures/sunset.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
