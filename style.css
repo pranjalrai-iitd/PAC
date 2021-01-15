@@ -17,11 +17,18 @@ body {
 
 header {
     height: 15vh;
-    background-image: url("Figures/stars.jpg");
-    background-size: contain;
+    z-index: 20;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.header-active {
+    background-image: url('Figures/stars.jpg');
+    background-size: contain;
 }
 
 section {
@@ -44,6 +51,7 @@ section {
 .logo img:hover {
     background-image: url('Figures/black_hole.jfif');
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
 }
 
@@ -60,9 +68,10 @@ section {
 
 .nav-links ul li a {
     color: white;
+    text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
     cursor: pointer;
 }
 
@@ -127,6 +136,7 @@ footer {
 .footer-logo img:hover {
     background-image: url('Figures/black_hole.jfif');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer-nav {
@@ -210,9 +220,10 @@ main {
 
 .welcome {
     padding: 5px;
-    min-height: 85vh;
+    min-height: 100vh;
     background-image: url("Figures/mars.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -221,6 +232,7 @@ main {
 }
 
 .welcome .title {
+    margin-top: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -279,8 +291,7 @@ main {
 .about {
     padding-top: 15px;
     padding-bottom: 15px;
-    min-height: 100vh;
-    background-color: rgb(43, 106, 116);
+    min-height: 90vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -324,6 +335,7 @@ main {
     min-height: 120vh;
     background-image: url("Figures/bubble_nebula.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -333,8 +345,8 @@ main {
 
 .events {
     padding: 5px;
-    min-height: 100vh;
-    background-color: rgb(43, 106, 116);
+    min-height: 90vh;
+    background-size: cover;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -360,9 +372,10 @@ main {
 }
 
 .updates {
-    min-height: 100vh;
+    min-height: 105vh;
     background-image: url("Figures/veil_nebula.jpg");
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -475,9 +488,11 @@ main {
         color: black;
         border-bottom: 2px solid white;
         font-weight: bold;
+        text-decoration: none;
     }
     .nav-links ul li a:hover {
         border-color: rgb(43, 106, 116);
+        color: rgb(43, 106, 116);
     }
     .burger {
         display: block;
