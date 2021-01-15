@@ -224,6 +224,7 @@ main {
     min-height: 100vh;
     background-image: url("Figures/mars.jpg");
     background-size: cover;
+    background-position:center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
@@ -336,6 +337,7 @@ main {
     min-height: 120vh;
     background-image: url("Figures/bubble.jpg");
     background-size: cover;
+    background-position:center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
@@ -375,6 +377,7 @@ main {
 .updates {
     min-height: 105vh;
     background-image: url("Figures/veil_nebula.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
